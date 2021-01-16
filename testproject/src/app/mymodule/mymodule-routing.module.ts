@@ -6,14 +6,12 @@ import { FeatureMerlinComponent } from './feature-merlin/feature-merlin.componen
 import { FeatureHenningComponent } from './feature-henning/feature-henning.component';
 
 const routes: Routes =[
-  { path: 'hening', component: FeatureHenningComponent },
+  { path: 'henning', component: FeatureHenningComponent },
   { path: '**', redirectTo: 'henning' }
 ]
 
 @NgModule({
-  declarations: [],
-  imports: [RouterModule.forChild(routes)
-  ],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 

@@ -4,13 +4,15 @@ import { FeatureRominaComponent } from './feature-romina/feature-romina.componen
 import { FeatureHenningComponent } from './feature-henning/feature-henning.component';
 import { FeatureMerlinComponent } from './feature-merlin/feature-merlin.component';
 import { FeatureJanComponent } from './feature-jan/feature-jan.component';
+import { MymoduleRoutingModule } from './mymodule-routing.module';
 
 
 
 @NgModule({
   declarations: [FeatureRominaComponent, FeatureHenningComponent, FeatureMerlinComponent, FeatureJanComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MymoduleRoutingModule
   ]
 })
 export class MymoduleModule { }
