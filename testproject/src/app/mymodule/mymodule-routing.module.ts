@@ -7,9 +7,7 @@ import { FeatureHenningComponent } from './feature-henning/feature-henning.compo
 import { FeatureJanComponent } from './feature-jan/feature-jan.component';
 
 const routes: Routes =[
-  { path: 'henning', component: FeatureHenningComponent },
-  { path: 'merlin', component: FeatureMerlinComponent },
-  { path: 'jan', component: FeatureJanComponent }
+  { path: 'henning', component: FeatureHenningComponent }
 ]
 
 @NgModule({
