@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MatSliderModule } from '@angular/material/slider';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
+
 import { FeatureRominaComponent } from './feature-romina/feature-romina.component';
 import { FeatureHenningComponent } from './feature-henning/feature-henning.component';
 import { FeatureMerlinComponent } from './feature-merlin/feature-merlin.component';
@@ -15,10 +18,15 @@ import { MymoduleRoutingModule } from './mymodule-routing.module';
   imports: [
     CommonModule,
     MymoduleRoutingModule,
-    MatSliderModule
+    MatSliderModule,
+    MatTableModule,
+    MatToolbarModule
+
   ],
   exports: [
-    MatSliderModule
+    MatSliderModule,
+    MatTableModule,
+    MatToolbarModule
   ]
 })
 export class MymoduleModule { }
