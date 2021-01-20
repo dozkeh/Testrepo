@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { MatSliderModule } from '@angular/material/slider';
 import { MatTableModule } from '@angular/material/table';
-import { MatToolbar, MatToolbarModule } from '@angular/material/toolbar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTreeModule } from '@angular/material/tree';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { FeatureRominaComponent } from './feature-romina/feature-romina.component';
 import { FeatureHenningComponent } from './feature-henning/feature-henning.component';
@@ -20,13 +22,17 @@ import { MymoduleRoutingModule } from './mymodule-routing.module';
     MymoduleRoutingModule,
     MatSliderModule,
     MatTableModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTreeModule,
+    MatTabsModule
 
   ],
   exports: [
     MatSliderModule,
     MatTableModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTreeModule,
+    MatTabsModule
   ]
 })
 export class MymoduleModule { }
